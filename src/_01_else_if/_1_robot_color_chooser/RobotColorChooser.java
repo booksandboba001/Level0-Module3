@@ -20,7 +20,7 @@ public class RobotColorChooser {
 		int numz;
 		Robot randy = new Robot();
 		randy.penDown();
-		randy.setSpeed(100);
+		randy.setSpeed(1000);
 		for (numz =0; numz<4; numz++){
 			randy.move(90);
 			randy.turn(90);
