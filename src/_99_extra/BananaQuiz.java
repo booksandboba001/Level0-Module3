@@ -1,6 +1,7 @@
 
 package _99_extra;
 
+import javax.print.attribute.standard.JobHoldUntil;
 import javax.swing.JOptionPane;
 
 public class BananaQuiz
@@ -9,6 +10,17 @@ public class BananaQuiz
 	public static void main(String[] args)
 	{
 		//1. ask the user if they like bananas
+		String sting = JOptionPane.showInputDialog("Do you like bananas?");
+		if (sting.equals("no")){
+			JOptionPane.showMessageDialog(null, "You are crazy");
+		}
+		if (sting.equals("yes")){
+			String crab_rights = JOptionPane.showInputDialog(null,"What is your favorite hobby?");
+			JOptionPane.showMessageDialog(null, crab_rights + " is much better than bananas!");
+		}
+		else{
+			JOptionPane.showMessageDialog(null,"You are bananas!");
+		}
 		//2. if they say no, 
 			//tell them they are crazy 
 			//and end quiz
